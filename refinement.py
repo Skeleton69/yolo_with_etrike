@@ -3,7 +3,7 @@ import numpy as np
 
 def main():
 
-    model = YOLO("C:/Users/goper/YOLO_etrikes/experiments/yolo_etrikes/weights/best.pt")
+    model = YOLO("path_to_model.pt")
 
     model.train(
         data="dataset/coco-with-etrikes.yaml",
@@ -79,4 +79,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
