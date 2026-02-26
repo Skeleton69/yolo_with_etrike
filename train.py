@@ -4,7 +4,7 @@ import numpy as np
 
 
 def main():
-    model = YOLO("C:/Users/goper/YOLO_etrikes/yolov8s.pt")
+    model = YOLO("path_to_model.mp4")
 
     model.train(
         data="dataset/coco-with-etrikes.yaml",
@@ -78,4 +78,5 @@ def main():
     print("mAP@0.5:0.95:", coco_map)
 
 if __name__ == "__main__":
+
     main()
