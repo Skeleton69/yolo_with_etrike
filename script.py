@@ -13,7 +13,7 @@ vehicle_classes = {2: "car", 3: "motorcycle", 5: "bus", 7: "truck", 80: "etrike"
 logged_ids = {cls: set() for cls in vehicle_classes}
 
 results = model.track(
-    source=r"C:\Users\goper\Downloads\19946592-hd_1920_1080_30fps.mp4",
+    source=r"path_to_video.mp4",
     stream=True,
     show=True,
     tracker="bytetrack.yaml",
@@ -49,3 +49,4 @@ def plural(name):
 
 for cls, name in vehicle_classes.items():
     print(f" Total unique {plural(name)} detected: {len(logged_ids[cls])}")
+
